@@ -7,7 +7,10 @@ import Home from "./portal/home/Home";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Query from "./portal/Query/Query";
+import AddSim from "./portal/SIM/AddSim";
+import AddIndustry from "./portal/Industry/AddIndustry";
+import AddUser from "./portal/user/AddUser";
+import ExcelFileUpload from "./portal/SIM/ExcelFileUpload";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -27,13 +30,44 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             }
           />
         </Route>
-        {/* query next */}
-        <Route path="/query" element={<App />}>
+        {/* add new sim */}
+        <Route path="/add-new-sim" element={<App />}>
           <Route
             path=""
             element={
               <ProtectedRoute>
-                <Query />
+                <AddSim />
+              </ProtectedRoute>
+            }
+          />
+        </Route>
+        <Route path="/add-new-insudtry" element={<App />}>
+          <Route
+            path=""
+            element={
+              <ProtectedRoute>
+                <AddIndustry />
+              </ProtectedRoute>
+            }
+          />
+        </Route>
+        <Route path="/add-new-user" element={<App />}>
+          <Route
+            path=""
+            element={
+              <ProtectedRoute>
+                <AddUser />
+              </ProtectedRoute>
+            }
+          />
+        </Route>
+        {/* excel file upload ..  */}
+        <Route path="/excel-bulk-upload" element={<App />}>
+          <Route
+            path=""
+            element={
+              <ProtectedRoute>
+                <ExcelFileUpload />
               </ProtectedRoute>
             }
           />

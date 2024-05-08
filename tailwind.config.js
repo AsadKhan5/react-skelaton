@@ -7,6 +7,7 @@ export default {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
+      "winter",
       {
         mytheme: {
           primary: "#7C3AED",
@@ -16,7 +17,6 @@ export default {
           "base-100": "#ffffff",
         },
       },
-      "retro",
       "dark",
     ],
   },
