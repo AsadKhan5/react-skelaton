@@ -39,19 +39,19 @@ const PortalSideBar = ({ logout }) => {
         </li>
         <li className="my-2 text-md font-semibold">
           <NavLink to="/add-new-insudtry">
-            <LiaIndustrySolid className="text-xl" />
+            <LiaIndustrySolid className="text-2xl" />
             Add Industry
           </NavLink>
         </li>
         <li className="my-2 text-md font-semibold">
           <NavLink to="/add-new-user">
-            <GrUserAdd />
+            <GrUserAdd className="text-lg" />
             Add User
           </NavLink>
         </li>
         <li className="my-2 text-md font-semibold">
           <NavLink to="/excel-bulk-upload">
-            <FaFileExcel />
+            <FaFileExcel className="text-lg" />
             Add Bulk
           </NavLink>
         </li>

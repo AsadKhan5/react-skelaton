@@ -43,10 +43,10 @@ const AddIndustry = () => {
         <FaIndustry className="text-2xl" />
         <h2 className="font-semibold text-xl">Add Industry</h2>
       </div>
-      <div className="flex flex-col gap-4 items-center justify-center h-[calc(100vh-100px)]">
+      <div className="flex flex-col  items-center justify-center h-[calc(100vh-100px)]">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 w-full max-w-md md:shadow-lg p-6"
+          className="flex flex-col gap-6 w-full max-w-md md:shadow-lg px-6 py-4"
         >
           <div className="">
             <label htmlFor="industryName" className="block mb-1">
@@ -122,7 +122,7 @@ const AddIndustry = () => {
           </div>
           <button
             type="submit"
-            className="btn btn-sm md:w-1/4 btn-secondary text-white rounded-md flex justify-center items-center gap-2"
+            className="btn btn-sm btn-secondary text-white rounded-md"
           >
             Create
             <FaIndustry className="text-lg" />

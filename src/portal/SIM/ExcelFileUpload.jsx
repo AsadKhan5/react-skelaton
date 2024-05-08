@@ -108,11 +108,11 @@ const ExcelFileUpload = () => {
   return (
     <div>
       <h3 className="font-bold text-xl p-2 flex">
-        <FaFileExcel className="text-2xl text-green-700" />
+        <FaFileExcel className="text-2xl" />
         Upload Excel File
       </h3>
       <div className="flex justify-center items-center h-[calc(100vh-100px)]">
-        <div className="flex flex-col gap-6 md:shadow-xl md:w-2/5 p-4">
+        <div className="flex flex-col gap-6 md:shadow-xl md:w-2/5 py-4 px-6">
           <div className="flex justify-between items-start">
             <div>
               <p className="text-sm font-semibold">Mandatory Fields:</p>
@@ -123,13 +123,13 @@ const ExcelFileUpload = () => {
                 <li>Company Name</li>
               </ul>
             </div>
-            <div
-              className="flex gap-1 text-sm cursor-pointer"
+            <button
+              className="btn btn-secondary flex gap-1 text-sm cursor-pointer"
               onClick={downloadTemplate}
             >
               <p className="text-sm font-medium">Download Template </p>
-              <FaFileDownload className="text-xl text-green-700" />
-            </div>
+              <FaFileDownload className="text-xl" />
+            </button>
           </div>
           <label className="flex gap-1 text-sm font-semibold">
             Upload your Excel file here
@@ -142,7 +142,7 @@ const ExcelFileUpload = () => {
             disabled={processing}
           />
           <button
-            className="btn btn-sm md:w-1/4 btn-secondary text-white text-sm font-semibold rounded-md mt-4 p-1"
+            className="btn btn-sm btn-secondary text-white text-sm font-semibold rounded-md mt-4 p-1"
             onClick={processing ? null : dataSubmitHandler}
             disabled={processing || loading}
           >

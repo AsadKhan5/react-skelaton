@@ -125,7 +125,7 @@ const AddSim = () => {
       <div className="flex flex-col items-center justify-center h-[calc(100vh-100px)]">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 w-full md:max-w-2xl md:shadow-lg px-6 py-4"
+          className="flex flex-col gap-6 w-full md:max-w-2xl md:shadow-lg px-6 py-4"
         >
           {/* IMSI id and ICCID */}
           <div className="flex gap-6 justify-center">
@@ -305,7 +305,7 @@ const AddSim = () => {
           </div>
           <button
             type="submit"
-            className="btn btn-sm md:w-1/6 btn-secondary text-white font-semibold rounded-md mt-4"
+            className="btn btn-sm btn-secondary text-white font-semibold rounded-md"
           >
             Add <RiSimCard2Line className="text-xl" />
           </button>

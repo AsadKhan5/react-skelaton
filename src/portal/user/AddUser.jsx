@@ -42,10 +42,10 @@ const AddUser = () => {
         <HiUserAdd className="text-2xl" />
         <h2 className="font-semibold text-xl">Add User</h2>
       </div>
-      <div className="flex flex-col gap-5 items-center justify-center h-[calc(100vh-100px)]">
+      <div className="flex flex-col items-center justify-center h-[calc(100vh-100px)]">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-3 w-full max-w-md md:shadow-lg p-6"
+          className="flex flex-col gap-6 w-full max-w-md md:shadow-lg px-6 py-4"
         >
           <div>
             <label htmlFor="userName" className="block mb-1">
@@ -112,7 +112,7 @@ const AddUser = () => {
           </div>
           <button
             type="submit"
-            className="btn btn-sm md:w-1/5 btn-secondary text-white rounded-md"
+            className="btn btn-sm btn-secondary text-white rounded-md"
           >
             Add <HiUserAdd />
           </button>
