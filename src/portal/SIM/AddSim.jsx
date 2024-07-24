@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { RiSimCard2Line } from "react-icons/ri";
-import { createSim, getAllIndustryNames } from "../../utils/APIs";
+// import { createSim, getAllIndustryNames } from "../../utils/APIs";
 
 const AddSim = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +12,7 @@ const AddSim = () => {
     connectionType: "",
     companyName: "",
     deviceId: "",
-    state: "", // New state field
+    state: "",
     city: "",
     area: "",
   });

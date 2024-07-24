@@ -3,13 +3,14 @@ import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import PortalSideBar from "./portal/sideBar/PortalSideBar";
 import { RiMenu3Fill } from "react-icons/ri";
+import getUserToken from "./utils/token";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const checkUserToken = () => {
-      const userToken = localStorage.getItem("user-token");
+      const userToken = getUserToken();
       setIsLoggedIn(userToken && userToken !== "undefined");
     };
 
@@ -17,7 +18,7 @@ function App() {
   }, []);
 
   const logout = () => {
-    localStorage.clear(); // You might want to do additional cleanup here
+    localStorage.clear();
     setIsLoggedIn(false);
   };
 

@@ -1,13 +1,11 @@
 // PortalSideBar.jsx
 import React from "react";
 import { useNavigate, Link, NavLink } from "react-router-dom";
-import { FaSimCard, FaFileExcel } from "react-icons/fa";
-import { LiaIndustrySolid } from "react-icons/lia";
-import { GrUserAdd } from "react-icons/gr";
+import { FaUserTie } from "react-icons/fa";
 import { RiLogoutCircleLine } from "react-icons/ri";
 import { TbHomeExclamation } from "react-icons/tb";
 
-import simLogo from "/simLogo.png";
+import hrLogo from "/Hr-logo.png";
 
 const PortalSideBar = ({ logout }) => {
   const navigate = useNavigate();
@@ -24,9 +22,10 @@ const PortalSideBar = ({ logout }) => {
         aria-label="close sidebar"
         className="drawer-overlay"
       ></label>
-      <ul className="menu py-1 px-3 w-80 min-h-full bg-base-200 text-base-content">
-        <img className="w-16" src={simLogo} />
-        <span className="mb-5 font-bold text-xl font-mono">SIM Sphere</span>
+      <ul className="menu py-1 px-3 w-[18rem] min-h-full bg-base-200 text-base-content">
+        <div>
+          <img className="w-48 my-8" src={hrLogo} />
+        </div>
         <li className="my-2 font-semibold text-md">
           <NavLink to="/">
             <TbHomeExclamation className="text-xl" /> Home
@@ -34,25 +33,7 @@ const PortalSideBar = ({ logout }) => {
         </li>
         <li className="my-2 font-semibold text-md">
           <NavLink to="/add-new-sim">
-            <FaSimCard className="text-xl" /> Add SIM
-          </NavLink>
-        </li>
-        <li className="my-2 text-md font-semibold">
-          <NavLink to="/add-new-insudtry">
-            <LiaIndustrySolid className="text-2xl" />
-            Add Industry
-          </NavLink>
-        </li>
-        <li className="my-2 text-md font-semibold">
-          <NavLink to="/add-new-user">
-            <GrUserAdd className="text-lg" />
-            Add User
-          </NavLink>
-        </li>
-        <li className="my-2 text-md font-semibold">
-          <NavLink to="/excel-bulk-upload">
-            <FaFileExcel className="text-lg" />
-            Add Bulk
+            <FaUserTie className="text-xl" /> Add Employee
           </NavLink>
         </li>
         <li className="fixed bottom-20 left-0  px-4 py-2 right-0 flex justify-center">
